@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Napoleon Dynamite = Top Tier</title>
+    <link id="csslink" rel="stylesheet" href="ogstyle.css" />
+    <script>
+      function toggleCSS() {
+        var currentCSS = document.getElementById("csslink");
+
+        if (currentCSS.getAttribute("href") == "newstyle.css") {
+          currentCSS.setAttribute("href", "ogstyle.css");
+        } else {
+          currentCSS.setAttribute("href", "newstyle.css");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <img class="bruh1" src="images/fin.jpg" alt="Spirit Fingers" /><img
+      class="bruh2"
+      src="images/fam.jpg"
+      alt="Family Picture"
+    /><img class="bruh3" src="images/nap.jpg" alt="Napoleon" /><img
+      class="bruh4"
+      src="images/kip.jpg"
+      alt="kip"
+    /><img class="bruh5" src="images/liger.jpg" alt="liger" />
+    <a href="Index.html">Home</a>
+    <footer><button onclick="toggleCSS()">Switch</button></footer>
+  </body>
+</html>

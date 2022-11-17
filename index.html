@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Procrastination</title>
+    <link id="csslink" rel="stylesheet" href="ogstyle.css" />
+    <script>
+      function toggleCSS() {
+        var currentCSS = document.getElementById("csslink");
+
+        if (currentCSS.getAttribute("href") == "newstyle.css") {
+          currentCSS.setAttribute("href", "ogstyle.css");
+        } else {
+          currentCSS.setAttribute("href", "newstyle.css");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="topbar">
+        <ul>
+          <li>
+            <a
+              href="https://www.ratemyprofessors.com/school?sid=1262"
+              target="_blank"
+              >Fix</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.usf.edu/engineering/cse/undergraduate/contacts.aspx"
+              target="_blank"
+              >I.T./CyS</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.usf.edu/engineering/cse/undergraduate/electives.aspx"
+              target="_blank"
+              >Classes</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Hidalgo is the G.O.A.T.</h2>
+        <p>A quality product of procastination</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <a href="diet.html"
+          ><img src="images/wilde.jpg" alt="Mufasa's Murderers (Wildebeests)"
+        /></a>
+        <div>
+          <h3>Swimming</h3>
+        </div>
+      </section>
+      <section class="card">
+        <a href="species.html"
+          ><img src="images/park.jpg" alt="Snoop Dogg"
+        /></a>
+        <div>
+          <h3>Parking</h3>
+        </div>
+      </section>
+      <section class="card">
+        <a href="habitat.html"><img src="images/neyo.jpg" alt="Neo" /></a>
+        <div>
+          <h3>Make a change</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button onclick="toggleCSS()">Switch</button> &copy; 22 Dale Cook
+    </footer>
+  </body>
+</html>
