@@ -1,21 +1,46 @@
 * {
   box-sizing: border-box;
+  background-color: crimson;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body,
-section,
-header,
-div,
-p,
-h1,
-h2,
-h3,
-ul,
-li,
-figure,
-figcaption {
-  margin: auto;
-  padding: 0;
+@keyframes jiggy {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
+table {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: jiggy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
@@ -45,17 +70,30 @@ header div a {
   position: relative;
   top: 1rem;
 }
+
 header div h2 {
-  font-size: 48px;
+  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
   color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
 }
 header div p {
   font-size: 24px;
   color: white;
   padding-top: 20px;
+  transform: scale(2, 3);
 }
 header nav ul li a {
-  color: #51279b;
+  color: #279b40;
   text-decoration: none;
   margin-left: 100px;
   font-size: bold;
@@ -76,7 +114,40 @@ header div {
   margin-left: 100px;
 }
 section.card {
-  display: inline-block;
-  width: 33%;
-  border-radius: 2px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: reversejiggy;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes reversejiggy {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
