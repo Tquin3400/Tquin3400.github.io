@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body,
+section,
+header,
+div,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+figure,
+figcaption {
+  margin: auto;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: #f0f4f8;
+  font-weight: 300;
+}
+header {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  display: inline-block;
+}
+main {
+  padding-left: 150px;
+}
+nav {
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+header div a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #51279b;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  top: 1rem;
+}
+header div h2 {
+  font-size: 48px;
+  color: white;
+}
+header div p {
+  font-size: 24px;
+  color: white;
+  padding-top: 20px;
+}
+header nav ul li a {
+  color: #51279b;
+  text-decoration: none;
+  margin-left: 100px;
+  font-size: bold;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #8662c7;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin-top: 30px;
+  display: inline-block;
+}
+header div {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+section.card {
+  display: inline-block;
+  width: 33%;
+  border-radius: 2px solid black;
+}

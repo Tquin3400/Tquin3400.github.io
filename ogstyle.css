@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+header {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  display: inline-block;
+}
+main {
+  padding-left: 150px;
+}
+
+header div h2 {
+  font-size: 48px;
+  color: black;
+}
+header div p {
+  font-size: 24px;
+  color: black;
+  padding-top: 20px;
+}
+header nav ul li a {
+  color: #51279b;
+  text-decoration: none;
+  margin-left: 100px;
+  font-size: bold;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #8662c7;
+}
+header nav ul li a:visited {
+  color: #0000ff;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin-top: 30px;
+  padding-left: 200px;
+  display: inline-block;
+}
+header div {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+section.card {
+  padding-top: 50px;
+  display: inline-block;
+  width: 33%;
+  border-radius: 2px solid black;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #6cf;
+}
+table {
+  width: 50%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
